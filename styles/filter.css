@@ -77,7 +77,10 @@
 
 .filter__checkbox-label {
     padding-top: 12px;
-    padding-left: 12px;
+}
+
+.filter__checkbox-label input {
+    margin-right: 12px;
 }
 
 .filter__field-header {

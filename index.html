@@ -16,35 +16,37 @@
         </div>
         <nav>
             <section class="navigation">      
-                <a class="navigation__link navigation__link_active" href="">Акции</a>
-                <a class="navigation__link" href="">Каталоги производителей</a>
-                <a class="navigation__link" href="">Оптовым покупателям</a>
-                <a class="navigation__link" href="">Ремонт и обслуживание</a>
-                <a class="navigation__link" href="">Гарантии</a>
-                <a class="navigation__link" href="">О нас</a>
-                <a class="navigation__link" href="">Новости</a>
-                <a class="navigation__link" href="">Контакты</a>
+                <a class="navigation__link_active" href="">Акции</a>
+                <a href="">Каталоги производителей</a>
+                <a href="">Оптовым покупателям</a>
+                <a href="">Ремонт и обслуживание</a>
+                <a href="">Гарантии</a>
+                <a href="">Новости</a>
+                <a href="">Контакты</a>
             </section>
-            
-            <div class="hamburger">
+            <div class="hamburger hamburger_navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
     </header>
+
     <hr class="divider"/>
+    
     <main class="main">
         <section class="menu">
             <img src="./assets/logo.svg" alt="company logo">
-            <button class="menu__burger-button">Каталог товаров</button>
+            <button class="menu__burger-button">
+                <img class="menu__burger-img" src="./assets/burger-menu.svg" alt="burger menu icon">
+                Каталог товаров
+            </button>
             <input placeholder="Поиск по сайту" class="menu__search-field" type="text">
             <div class="menu__button-container">
-                <button class="menu__button menu__button_phone"><img src="./assets/phone.svg" alt="phone icon"></button>
-                <button class="menu__button menu__button_user"><img src="./assets/user.svg" alt="user icon"></button>
-                <button class="menu__button menu__button_cart"><img src="./assets/cart.svg" alt="cart icon"></button>
+                <button class="menu__button"><img src="./assets/phone.svg" alt="phone icon"></button>
+                <button class="menu__button"><img src="./assets/user.svg" alt="user icon"></button>
+                <button class="menu__button"><img src="./assets/cart.svg" alt="cart icon"></button>
             </div>
-            
         </section>
 
         <section class="selection-container">
@@ -147,6 +149,13 @@
                 <section class="showcase-section">
                     <div class="showcase-section__container">
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -161,7 +170,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -170,6 +179,10 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_disabled">Нет в наличии</p>
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/second.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -185,14 +198,18 @@
                                 </div>
                             </div>
                             <p class="item__cost">351 375,25₽</p>
-                            <div class="item__buttons-container">
-                                <button class="item__decrease-button">-</button>
-                                <p class="item__count">1</p>
-                                <button class="item__increase-button">+</button>
-                                <button class="item__cart-button">В корзину</button>
+                            <div class="item__buttons-container item__buttons-container_choose-container">
+                                <button class="item__choose-other-item-button">Подобрать аналог</button>
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -216,6 +233,12 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -239,6 +262,13 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -253,7 +283,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -262,6 +292,10 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/fourth.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -276,7 +310,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -285,6 +319,9 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/fifth.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -299,7 +336,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -308,6 +345,9 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -331,6 +371,9 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -345,7 +388,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -354,6 +397,12 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/sixth.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -368,7 +417,7 @@
                                     <p class="item__value">3.2</p>
                                 </div>
                             </div>
-                            <p class="item__cost">351 375,25₽</p>
+                            <p class="item__cost">351 375,25₽ <span class="item__old-price">450 875₽</span></p>
                             <div class="item__buttons-container">
                                 <button class="item__decrease-button">-</button>
                                 <p class="item__count">1</p>
@@ -377,6 +426,9 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_hit-text">Хит</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/fourth.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -400,6 +452,12 @@
                             </div>
                         </article>
                         <article class="showcase__item item">
+                            <div class="item__information-container">
+                                <p class="item__hint item__hint_new-text">Новинка</p>
+                            </div>
+                            <div class="item__discount-container">
+                                <p class="item__hint item__hint_discount-text">Акция</p>
+                            </div>
                             <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
                             <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
                             <div class="item__characteristics-container">
@@ -463,13 +521,13 @@
         <div class="footer__info-container">
             <nav class="navigation navigation_footer">
                 <a class="navigation__link navigation__link_active" href="">Акции</a>
-                <a class="navigation__link" href="">Каталоги производителей</a>
-                <a class="navigation__link" href="">Оптовым покупателям</a>
-                <a class="navigation__link" href="">Ремонт и обслуживание</a>
-                <a class="navigation__link" href="">Гарантии</a>
-                <a class="navigation__link" href="">О нас</a>
-                <a class="navigation__link" href="">Новости</a>
-                <a class="navigation__link" href="">Контакты</a>
+                <a href="">Каталоги производителей</a>
+                <a href="">Оптовым покупателям</a>
+                <a href="">Ремонт и обслуживание</a>
+                <a href="">Гарантии</a>
+                <a href="">О нас</a>
+                <a href="">Новости</a>
+                <a href="">Контакты</a>
             </nav>
             <section class="footer__company-info">
                 <div class="address-container">

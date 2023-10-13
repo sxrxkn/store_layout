@@ -7,6 +7,18 @@
     font-size: 16px;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.25) perspective(1px)
+}
+
+a:hover {
+    color: blue;
+}
+
 .header {
     width: 90%;
     height: 53px;
@@ -68,6 +80,13 @@
     width: 183px;
     border-radius: 8px;
     color: #1E4593;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu__burger-img {
+    padding-right: 4px;
 }
 
 .menu__search-field {
@@ -83,6 +102,7 @@
     background-color: white;
     border-radius: 12px;
     border: 1px solid #D2DAE9;
+    color: #1E4593;
 }
 
 .menu__button-container {
@@ -90,17 +110,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-}
-
-.menu__button_phone {
-}
-.menu__button_user {
-}
-.menu__button_cart {
-}
-
-.selection-container {
-
 }
 
 .selection-container__page-type {
@@ -139,6 +148,7 @@
 .footer__company-info {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 
 .footer__link-section {
@@ -166,13 +176,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
 }
 
 .time-container__time-text {
     color: #535761;
 }
 
-.hamburger {
+.hamburger_navigation {
     display: none;
 }
 
@@ -251,7 +262,7 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 660px) {
     .showcase-section__container {
         flex-direction: column;
         align-items: center;
