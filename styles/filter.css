@@ -1,0 +1,138 @@
+.filter {
+    padding-bottom: 27px;
+}
+
+.filter__form {
+    width: 20vw;
+    border: 1px solid #F3F3F3;
+    padding: 8px 16px 20px 16px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.filter__header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__header {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.filter__break-button {
+    color: #1E4593;
+    border: none;
+    background-color: white;
+}
+
+.filer__input-field {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.filter__text-container {
+    display: flex;
+}
+
+.filter__range-text {
+    color: #9D9FA5;
+    width: 50%;
+    padding-left: 16px;
+    padding-bottom: 12px
+}
+
+.filter__cost-container {
+    display: flex;
+}
+
+.filter__cost-text {
+    width: 50%;
+    border: 2px solid #E9ECF4;
+    padding: 16px;
+}
+
+.filter__cost-text_border-left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.filter__cost-text_border-right {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+}
+
+.filter__range-input {
+    width: 100%;
+}
+
+.filter__find-input {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    border: 2px solid #E9ECF4;
+    border-radius: 8px;
+}
+
+.filter__checkbox-label {
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.filter__field-header {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222734;
+    padding-bottom: 16px;
+}
+
+.filer__input-field_checkbox-type {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__button-field {
+    display: flex;
+    padding-top: 16px;
+    justify-content: space-around;
+}
+
+.filter__apply-button {
+    color: #1E4593;
+    border: 1px solid #1E4593;
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+
+@media (max-width: 1170px) {
+    .filter {
+        width: 100%;
+    }
+    .filter__form {
+        width: 100%;
+    }
+
+    .navigation_footer {
+        display: none;
+    }
+
+    .footer__company-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .footer__company-info {
+        flex-direction: column;
+    }
+    
+    .footer__link-section {
+        flex-wrap: WRAP;
+    }
+}

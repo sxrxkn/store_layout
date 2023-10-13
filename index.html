@@ -3,10 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/filter.css">
+    <link rel="stylesheet" href="./styles/showcase.css">
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <div class="address-container">
+            <img src="./assets/map.svg" alt="place logo">
+            <a class="address-container__address-link" href="#">Подольск, Садовая 20</a>
+        </div>
+        <nav>
+            <section class="navigation">      
+                <a class="navigation__link navigation__link_active" href="">Акции</a>
+                <a class="navigation__link" href="">Каталоги производителей</a>
+                <a class="navigation__link" href="">Оптовым покупателям</a>
+                <a class="navigation__link" href="">Ремонт и обслуживание</a>
+                <a class="navigation__link" href="">Гарантии</a>
+                <a class="navigation__link" href="">О нас</a>
+                <a class="navigation__link" href="">Новости</a>
+                <a class="navigation__link" href="">Контакты</a>
+            </section>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <hr class="divider"/>
+    <main class="main">
+        <section class="menu">
+            <img src="./assets/logo.svg" alt="company logo">
+            <button class="menu__burger-button">Каталог товаров</button>
+            <input placeholder="Поиск по сайту" class="menu__search-field" type="text">
+            <div class="menu__button-container">
+                <button class="menu__button menu__button_phone"><img src="./assets/phone.svg" alt="phone icon"></button>
+                <button class="menu__button menu__button_user"><img src="./assets/user.svg" alt="user icon"></button>
+                <button class="menu__button menu__button_cart"><img src="./assets/cart.svg" alt="cart icon"></button>
+            </div>
+            
+        </section>
+
+        <section class="selection-container">
+            <p class="selection-container__page-type">Главная / Уплотнения</p>
+            <h1 class="selection-container__section-header">Уплотнения поршня гидроцилиндров</h1>
+            <div class="selection-container__flex-container">
+                <article class="filter">
+                    <form class="filter__form" action="get">
+                        <div> 
+                            <div class="filter__header-container">
+                                <h2 class="filter__header">Фильтры</h2>
+                                <button class="filter__break-button">Сбросить</button>
+                            </div>
+                            <hr class="divider" />
+                        </div>
+            
+                        <div class="filer__input-field">
+                            <h3 class="filter__field-header">Цена, р</h3>
+                            <div>
+                                <div class="filter__text-container">
+                                    <p class="filter__range-text">От</p>
+                                    <p class="filter__range-text">До</p>
+                                </div>
+                                <div class="filter__cost-container">
+                                    <p class="filter__cost-text filter__cost-text_border-left">1250</p>
+                                    <p class="filter__cost-text filter__cost-text_border-right">5000</p>
+                                </div>
+                            </div>
+                            <input class="filter__range-input" min="0" max="5000" type="range">
+                        </div>
+
+                        <div class="filer__input-field">
+                            <h3 class="filter__field-header">Наружный диаметр, мм</h3>
+                            <div>
+                                <div class="filter__text-container">
+                                    <p class="filter__range-text">От</p>
+                                    <p class="filter__range-text">До</p>
+                                </div>
+                                <div class="filter__cost-container">
+                                    <p class="filter__cost-text filter__cost-text_border-left">0</p>
+                                    <p class="filter__cost-text filter__cost-text_border-right">1000</p>
+                                </div>
+                            </div>
+                            <input class="filter__range-input" min="0" max="1000" type="range">
+                        </div>
+
+                        <div class="filer__input-field">
+                            <h3 class="filter__field-header">Внутренний диаметр, мм</h3>
+                            <div>
+                                <div class="filter__text-container">
+                                    <p class="filter__range-text">От</p>
+                                    <p class="filter__range-text">До</p>
+                                </div>
+                                <div class="filter__cost-container">
+                                    <p class="filter__cost-text filter__cost-text_border-left">0</p>
+                                    <p class="filter__cost-text filter__cost-text_border-right">230</p>
+                                </div>
+                            </div>
+                            <input class="filter__range-input" min="0" max="230" type="range">
+                        </div>
+
+                        <div class="filer__input-field">
+                            <h3 class="filter__field-header">Ширина, мм</h3>
+                            <div>
+                                <div class="filter__text-container">
+                                    <p class="filter__range-text">От</p>
+                                    <p class="filter__range-text">До</p>
+                                </div>
+                                <div class="filter__cost-container">
+                                    <p class="filter__cost-text filter__cost-text_border-left">0</p>
+                                    <p class="filter__cost-text filter__cost-text_border-right">3000</p>
+                                </div>
+                            </div>
+                            <input class="filter__range-input" min="0" max="3000" type="range">
+                        </div>
+
+                        <fieldset class="filer__input-field filer__input-field_checkbox-type">
+                            <legend class="filter__field-header">Бренд</legend>
+                            <input class="filter__find-input" placeholder="Я ищу..." type="text">
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Бренд 1</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Бренд 2</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Бренд 3</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Бренд 4</label>
+                        </fieldset>
+                        <fieldset class="filer__input-field filer__input-field_checkbox-type">
+                            <legend class="filter__field-header">Материал</legend>
+                            <input class="filter__find-input" placeholder="Я ищу..." type="text">
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Материал 1</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Материал 2</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Материал 3</label>
+                            <label class="filter__checkbox-label"><input type="checkbox"/>Материал 4</label>
+                        </fieldset>
+                    </form>
+                    <div class="filter__button-field">
+                        <button class="filter__apply-button">Применить</button>
+                        <button class="filter__break-button">Сбросить</button>
+                    </div>
+                </article>
+
+                <section class="showcase-section">
+                    <div class="showcase-section__container">
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/second.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/fourth.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/fifth.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/first.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/sixth.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/fourth.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        <article class="showcase__item item">
+                            <img width="100%" height="171px" src="./assets/product-card/third.png" alt="Изображение товара">
+                            <h3 class="item__header">Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)</h3>
+                            <div class="item__characteristics-container">
+                                <div>
+                                    <p class="item__characteristic">Внутренний диаметр, мм</p>
+                                    <p class="item__characteristic">Наружный диаметр, мм</p>
+                                    <p class="item__characteristic">Ширина, мм</p>
+                                </div>
+                                <div>
+                                    <p class="item__value">22</p>
+                                    <p class="item__value">29.2</p>
+                                    <p class="item__value">3.2</p>
+                                </div>
+                            </div>
+                            <p class="item__cost">351 375,25₽</p>
+                            <div class="item__buttons-container">
+                                <button class="item__decrease-button">-</button>
+                                <p class="item__count">1</p>
+                                <button class="item__increase-button">+</button>
+                                <button class="item__cart-button">В корзину</button>
+                            </div>
+                        </article>
+                        
+                    </div>
+                    <div class="showcase-section__buttons-container">
+                        <button class="showcase-section__page-button showcase-section__page-button_disabled">&lt</button>
+                        <button class="showcase-section__page-button showcase-section__page-button_active">1</button>
+                        <button class="showcase-section__page-button">2</button>
+                        <button class="showcase-section__page-button">3</button>
+                        <button class="showcase-section__page-button">...</button>
+                        <button class="showcase-section__page-button">12</button>
+                        <button class="showcase-section__page-button">&gt</button>
+                    </div>
+                    <p class="showcase-section__description">
+                        Кстати, некоторые особенности внутренней политики представляют собой не что иное, как квинтэссенцию победы ма
+                        ркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнава
+                        емости, из-за чего возрастает их статус бесполезности. 
+                    </p>
+                    <p class="showcase-section__description">
+                        Банальные, но неопровержимые выводы, а также интерактивные прототипы
+                        представлены в исключительно положительном свете. Идейные соображения высшего порядка,
+                        а также существующая теория напрямую зависит от вывода текущих активов. Предварительные выводы
+                        неутешительны: повышение уровня гражданского сознания не оставляет шанса для форм воздействия. 
+                        Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы формируют
+                        глобальную экономическую сеть и при этом — ассоциативно распределены по отраслям!
+                    </p>
+                    <p class="showcase-section__description">
+                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
+                        простого факта: семантический разбор внешних противодействий играет определяющее значение
+                        для как самодостаточных, так и внешне зависимых концептуальных решений.
+                    </p>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <hr class="divider"/>
+
+    <footer class="footer">
+        <div class="footer__info-container">
+            <nav class="navigation navigation_footer">
+                <a class="navigation__link navigation__link_active" href="">Акции</a>
+                <a class="navigation__link" href="">Каталоги производителей</a>
+                <a class="navigation__link" href="">Оптовым покупателям</a>
+                <a class="navigation__link" href="">Ремонт и обслуживание</a>
+                <a class="navigation__link" href="">Гарантии</a>
+                <a class="navigation__link" href="">О нас</a>
+                <a class="navigation__link" href="">Новости</a>
+                <a class="navigation__link" href="">Контакты</a>
+            </nav>
+            <section class="footer__company-info">
+                <div class="address-container">
+                    <img width="21px" height="21px" src="./assets/map.svg" alt="place logo">
+                    <a class="address-container__address-link" href="#">Подольск, Садовая 20</a>
+                </div>
+                <div class="time-container">
+                    <img src="./assets/time.svg" alt="time logo">
+                    <p class="time-container__time-text" href="#">с 9:00 до 21:00</p>
+                </div>
+            </section>
+    
+            <section class="footer__link-section">
+                <a class="footer__link"><img src="./assets/insta.svg" alt="instagram icon"></a>
+                <a class="footer__link"><img src="./assets/iconoir_telegram.svg" alt="telegram icon"></a>
+                <a class="footer__link"> <img src="./assets/facebook.svg" alt="facebook icon"></a>
+                <a class="footer__link"><img src="./assets/insta.svg" alt="instagram icon"></a>
+            </section>
+        </div>
+
+        <div class="footer__copyright-container">
+            <p class="footer__copyright-text">Copyright НГПРом 2022</p>
+            <img src="./assets/madeImg.png" alt="made company lodo">
+        </div>
+    </footer>
+    
     <script src="./script.js"></script>
 </body>
 </html>

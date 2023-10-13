@@ -1,0 +1,119 @@
+.showcase-section {
+    padding-bottom: 10px;
+}
+
+.showcase-section__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #E9ECF4;
+    padding: 12px;
+    width: 210px;
+    min-height: 424px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.item__header {
+    font-size: 18px;
+    font-weight: 400;
+    color: #222734;
+    padding-bottom: 4px;
+    padding-top: 16px;
+}
+
+.item__characteristics-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.item__characteristic {
+    width: 180px;
+    font-size: 14px;
+    color: #6B6F77;
+    padding-bottom: 2px;
+}
+
+.item__value {
+    padding-bottom: 2px;
+}
+
+.item__cost {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.item__buttons-container {
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__decrease-button {
+    border: none;
+    border-radius: 4px;
+    color: #9D9FA5;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: #F3F3F3;
+}
+
+.item__increase-button {
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #1E4593;
+}
+
+.item__cart-button {
+    padding: 8px 12px;
+    color: #1E4593;
+    border: none;
+    background-color: #E9ECF4;
+    border-radius: 8px;
+}
+
+.showcase-section__buttons-container {
+    padding-top: 32px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.showcase-section__page-button {
+    border: 1px solid #F3F3F3;
+    background-color: white;
+    border-radius: 4px;
+    width: 34px;
+    height: 34px;
+}
+
+.showcase-section__page-button_disabled {
+    border: none;
+    background-color: #F3F3F3;
+    color: #9D9FA5;
+}
+
+.showcase-section__page-button_active {
+    border-color: #1E4593;
+    color: #1E4593;
+}
+
+.showcase-section__description {
+    padding-bottom: 10px;
+    color: #6B6F77;
+}
